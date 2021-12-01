@@ -102,9 +102,9 @@ namespace P4_3_1204049
             {
                 if (int.Parse(txtAngka1.Text) < int.Parse(txtAngka2.Text))
                 {
-                    epWrong.SetError(txtAngka1, "");
+                    epWrong.SetError(txtAngka1, "Angka 1 harus lebih besar dari Angka 2");
                     epCorrect.SetError(txtAngka1, "");
-                    epWarning.SetError(txtAngka1, "Angka 1 harus lebih besar dari Angka 2");
+                    epWarning.SetError(txtAngka1, "");
                 }
                 else
                 {
@@ -133,8 +133,8 @@ namespace P4_3_1204049
             {
                 if (int.Parse(txtAngka1.Text) < int.Parse(txtAngka2.Text))
                 {
-                    epWarning.SetError(txtAngka2, "Angka 2 harus lebih kecil dari Angka 1!");
-                    epWrong.SetError(txtAngka2, "");
+                    epWarning.SetError(txtAngka2, "");
+                    epWrong.SetError(txtAngka2, "Angka 2 harus lebih kecil dari Angka 1!");
                     epCorrect.SetError(txtAngka2, "");
                 }
                 else
